@@ -1,5 +1,22 @@
 <!DOCTYPE html>
 <html>
-<title>my first page</title>
-this is content.
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <link rel="stylesheet" type="text/css" href="https://typo.sofi.sh/typo.css">
+  <script src="https://cdn.bootcss.com/marked/0.3.6/marked.js"></script>
+</head>
+<body>
+
+  <div id="content">
+  	##我的博客
+  	试一试
+  </div>  
+  <script>
+  	var content = document.getElementById("content");
+    var markdown = content.innerHTML;
+    var html = marked(markdown);
+    content.innerHTML = html;
+  </script>
+</body>
 </html>
